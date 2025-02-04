@@ -10,14 +10,14 @@
 </head>
 
 <body>
+
     <header>
         <nav>
-
             <ul>
                 <li><a href="index.html" class="active">HOME</a></li>
-                <li><a href="blog.html">SOBRE MIM</a></li>
-                <li><a href="servicos.html">HABILIDADES</a></li>
-                <li><a href="servicos.html">PROJETOS</a></li>
+                <li><a href="#sobremim">SOBRE MIM</a></li>
+                <li><a href="#habilidades">HABILIDADES</a></li>
+                <li><a href="#projetos">PROJETOS</a></li>
                 <li><a href="contato.html">CONTATO</a></li>
             </ul>
         </nav>
@@ -30,7 +30,7 @@
 
         <section class="hero">
             <div class="content">
-                <p>OLÁ,</p>
+                <p>Olá,</p>
                 <h1>Eu sou</u> <span>Pedro</span> Henrique</h1>
                 <p>Sou um estudante do 3º ano do Ensino médio e estou cursando desenvolvimento de sistemas no Senai.</p>
             </div>
@@ -38,7 +38,7 @@
                 <img src="assets/img/img-home.jpg" alt="">
             </div>
         </section>
-        <section class="info">
+        <section class="info" id="sobremim">
             <div>
                 <h1>Sobre mim</h1>
 
@@ -50,7 +50,7 @@
             </div>
         </section>
 
-        <section class="habilidades">
+        <section class="habilidades" id="habilidades">
 
             <h1>Habilidades</h1>
 
@@ -103,37 +103,52 @@
             </div>
         </section>
 
-        <section class="projetos">
+        <section class="projetos" id="projetos">
 
-            <h1>Projetos</h1>
+            <div class="bloco1">
 
-            <div class="card2">
-                <div class="top-section">
-                    <div class="border"></div>
+                <h2>Calculadora Simples:</h2>
+
+                <div class="divinput">
+                    <label for="" class="label">Informe um número</label>
+                    <input type="text" name="num1" id="num1" class="input">
                 </div>
-                <div class="bottom-section">
-                    <span class="title">PROJETO</span>
-                    <div class="row row1">
-                        <div class="item">
-                            <span class="big-text">2626</span>
-                            <span class="regular-text">UI elements</span>
-                        </div>
-                        <div class="item">
-                            <span class="big-text">100%</span>
-                            <span class="regular-text">Free for use</span>
-                        </div>
-                        <div class="item">
-                            <span class="big-text">38,631</span>
-                            <span class="regular-text">Contributers</span>
-                        </div>
-                    </div>
+
+                <div class="divinput">
+                    <label for="" class="label">Informe outro número</label>
+                    <input type="text" name="num2" id="num2" class="input">
                 </div>
+
+                <button id="btncalcular" class="btnjs">Calcular</button>
+
+                <div class="divresultado">
+                    <h3 class="resultadotext">Resultado:</h3>
+                    <p id="resultado" class="mostrarresultado"></p>
+                </div>
+            </div>
+
+            <div class="bloco2">
+
+
+
             </div>
 
         </section>
 
+        <section class="contato" id="contato">
 
+            <h1>Contato</h1>
+
+        </section>
     </main>
+
+    <footer>
+
+        
+
+    </footer>
+
+    <script src="assets/js/actions.js"></script>
 
 </body>
 

@@ -19,3 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+function calcular() {
+    var num1 = document.getElementById('num1').value
+    var num2 = document.getElementById('num2').value
+
+    num1 = parseFloat(num1);
+    num2 = parseFloat(num2);
+
+    var soma = num1 + num2
+
+    document.getElementById('resultado').innerText = soma
+}
+
+document.getElementById('btncalcular').addEventListener('click', calcular);
